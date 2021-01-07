@@ -24,7 +24,7 @@ defaultdir="/media/root/persistence/Code/gedeon/Python/trash/"
 def ext_here(filedir):
     global err_msg,lab2,top
     decomp(filedir,'')
-    mixer.music.load("assets/sound/click.ogg")
+    mixer.music.load("asset/sound/click.ogg")
     mixer.music.play()
 
 
@@ -72,7 +72,7 @@ def ext():
 print('terminer')
 cnv = Canvas(root, width=SIDE, height=SIDE, bg='ivory')
 cnv.grid(row=2,column=1,padx=1,pady=1)
-logo = PhotoImage(file="assets/img/projectile.png")
+logo = PhotoImage(file="asset/img/projectile.png")
 center=(200,200)
 cnv.create_image(center, image=logo)
 
