@@ -1,0 +1,27 @@
+{
+    "dev":"Toutpuissantged",
+    "main":{
+        "title":"Zip",
+        "description":"Zip est un logiciel de manipulation de fichiers compresser \n en version {} par toutpuisaantged",
+        "choose":"choisir le fichier",
+        "exit":"quitter"
+    },
+    "tools":{
+        "dir":"chemin du fichiers",
+        "name":"nom du fichier",
+        "here":"extraire ici",
+        "to":"extraire vers",
+        "close":"fermer"
+    },
+    "popup":{
+        "success":{
+            "title":"reussi",
+            "text":"decmpression terminer"
+        },
+        "error":{
+            "title":"stop",
+            "text":"erreur survenue !"
+        },
+        "close":"fermer"
+    }
+}

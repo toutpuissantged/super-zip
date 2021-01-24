@@ -1,0 +1,27 @@
+{
+    "dev":"Toutpuissantged",
+    "main":{
+        "title":"Zip",
+        "description":"Zip ist eine Dateiverarbeitungssoftware, die \n in Version {} von toutpuisaantged komprimiert",
+        "choose":"Datei wählen",
+        "exit":"verlassen"
+    },
+    "tools":{
+        "dir":"Dateipfad",
+        "name":"Dateiname",
+        "here":"hier entpacken",
+        "to":"extrahieren, um",
+        "close":"schließen"
+    },
+    "popup":{
+        "success":{
+            "title":"Erfolg",
+            "text":"Dekompressionsende"
+        },
+        "error":{
+            "title":"halt",
+            "text":"Ein Fehler ist aufgetreten!"
+        },
+        "close":"schließen"
+    }
+}

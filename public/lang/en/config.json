@@ -1,0 +1,27 @@
+{
+    "dev":"Toutpuissantged",
+    "main":{
+        "title":"Zip",
+        "description":"Zip is a file handling software compress \n in version {} by toutpuisaantged",
+        "choose":"choose file",
+        "exit":"exit"
+    },
+    "tools":{
+        "dir":"file path",
+        "name":"file name",
+        "here":"extract here",
+        "to":"extract to",
+        "close":"close"
+    },
+    "popup":{
+        "success":{
+            "title":"success",
+            "text":"decompression finish"
+        },
+        "error":{
+            "title":"stop",
+            "text":"error occurred!"
+        },
+        "close":"close"
+    }
+}

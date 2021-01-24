@@ -1,0 +1,27 @@
+{
+    "dev":"Toutpuissantged",
+    "main":{
+        "title":"Zip",
+        "description":"Zip es un software de gestión de archivos compress \n en la versión {} de toutpuisaantged",
+        "choose":"Elija el archivo",
+        "exit":"dejar"
+    },
+    "tools":{
+        "dir":"ruta de archivo",
+        "name":"nombre del archivo",
+        "here":"extraer aqui",
+        "to":"extraer a",
+        "close":"cerrar"
+    },
+    "popup":{
+        "success":{
+            "title":"éxito",
+            "text":"final de descompresión"
+        },
+        "error":{
+            "title":"detener",
+            "text":"¡Se produjo un error!"
+        },
+        "close":"cerrar"
+    }
+}
