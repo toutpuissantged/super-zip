@@ -23,7 +23,7 @@ SIDEX=100
 SIDEY=120
 userLang="fr"
 defaultdir="/media/root/persistence/Code/gedeon/Python/trash/"
-jsonDir="public\lang\\"+userLang+"\config.json"
+jsonDir="public\\lang\\"+userLang+"\\config.json"
 
 root = Tk()
 root.size()
@@ -124,10 +124,7 @@ def langPop():
     btn3.pack(padx=10,pady=10)
     btn3=Button(top3,text=lang['popup']['close'],pady=10,padx=40,fg="white",bg="crimson",command=top3.destroy)
     btn3.pack(padx=10,pady=10)
-    async def rol (top3):
-        await asyncio.sleep(2)
-        top3.destroy()
-    rol(top3)
+
 
 def langValid(choix):
     langList=["francais","anglais","espagnol","allemand"]

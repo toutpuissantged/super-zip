@@ -1,3 +1,10 @@
 asset/
 zip.code-workspace
 .vscode/
+__pycache__
+core/config/__pycache__
+core/extract/__pycache__
+core/lang/__pycache__
+core/music/__pycache__
+core/root/__pycache__
+
