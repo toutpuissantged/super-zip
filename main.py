@@ -19,8 +19,8 @@ mixer.init()
 global lab2,p1open,defaultdir,version,lang,userLang
 version='1.0'
 p1open=0
-SIDEX=400
-SIDEY=400
+SIDEX=100
+SIDEY=120
 userLang="fr"
 defaultdir="/media/root/persistence/Code/gedeon/Python/trash/"
 jsonDir="public\lang\\"+userLang+"\config.json"
@@ -165,8 +165,8 @@ root.title(lang['main']['title'])
 print('terminer')
 cnv = Canvas(root, width=SIDEX, height=SIDEY, bg='ivory')
 cnv.grid(row=2,column=1,padx=1,pady=1)
-logo = PhotoImage(file="asset/img/projectile.png")
-center=(200,200)
+logo = PhotoImage(file="asset/img/main.jpg")
+center=(50,60)
 cnv.create_image(center, image=logo)
 
 Label(root,text=lang['main']['description'].format(version),fg="white",bg="royalblue",padx=20,pady=20).grid(row=1,column=1,padx=1,pady=1)
