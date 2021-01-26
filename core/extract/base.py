@@ -1,10 +1,9 @@
 
 
 def ext_here(props):
- 
+    props['ext_ui']['filedir2']=props['ext_ui']['filedir']
     props['music'].clickSon()
     #print(filedir2)
-    props['ext_ui']['filedir2']=''
     decomp(props)
     
 def ext_to(props):
@@ -24,7 +23,7 @@ def ext_to(props):
 
 def decomp(props):
 
-    p1open=props['loader']['p1open']
+    p1open=props['env']['main']['p1open']
     music=props['music']
     not_err=0
     finish=props['finish']

@@ -7,4 +7,5 @@ core/extract/__pycache__
 core/lang/__pycache__
 core/music/__pycache__
 core/root/__pycache__
-
+dist
+build

@@ -11,4 +11,4 @@ setup( name = "ziper",
 version = "0.1",
 description = "My GUI application!",
 #options = {"build_exe": build_exe_options},
-executables = [Executable("main.py", base=base)])
+executables = [Executable("index.py", base=base)])
