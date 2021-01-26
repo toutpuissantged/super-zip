@@ -17,3 +17,4 @@ from core.extract.msg import *
 from core.extract.ui import *
 from core.lang.ui import *
 from core.music.music import * 
+from core.home.main import *
