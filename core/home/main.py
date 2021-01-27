@@ -1,5 +1,4 @@
 from tkinter import *
-from PIL import ImageTk,Image
 
 def root_monted(props):
     root=props['root']
@@ -15,7 +14,8 @@ def root_monted(props):
     print('terminer')
     cnv = Canvas(root, width=SIDEX, height=SIDEY, bg='ivory')
     cnv.grid(row=2,column=1,padx=1,pady=1)
-    logo = PhotoImage(file="main.jpg")
+    #logo = PhotoImage(file="main.jpg")
+    logo=env['logo']
     center=(50,60)
     cnv.create_image(center, image=logo)
     Label(root,text=lang['main']['description'].format(version),fg="white",bg="royalblue",padx=20,pady=20).grid(row=1,column=1,padx=1,pady=1)

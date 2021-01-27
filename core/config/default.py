@@ -3,8 +3,7 @@ env={
     'p1open':0,
     'SIDEX':100,
     'SIDEY':120,
-    'userLang':"en",
+    'userLang':"fr",
     'defaultdir':"C:\\",
 
 }
-

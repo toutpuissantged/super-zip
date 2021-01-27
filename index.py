@@ -1,4 +1,4 @@
-#! /media/root/persistence/Code/gedeon/Python/VituralEnv/bin/python
+#! python
 
 #By toutpuissantged
 
@@ -10,8 +10,10 @@ root = Tk()
 root.size()
 root.iconbitmap('asset/img/main.jpg')
 
-lang=langInit("public\\lang\\"+env['userLang']+"\\config.json",json)
+lang=langInit("public/lang/"+env['userLang']+"/config.json",json)
 root.title(lang['main']['title'])
+logo = PhotoImage(file="asset/img/main.jpg")
+global props
 
 props={
     'root':root,
@@ -32,6 +34,18 @@ props={
         'filedir2':'',
         'finishswetch':0
     },
+    'db':{
+        'name':'auth.db',
+        'dir':'database/'
+    },
+    'auth':{
+        'root':'',
+        'Login':'',
+        'Password':'',
+        'ErrMsg':'',
+        'valide':0,
+        'conter':0,
+    },
     'env':{
         'main':{
 
@@ -42,6 +56,7 @@ props={
             'userLang':env['userLang'],
             'defaultdir':env['defaultdir'],
             'jsonDir':"public\\lang\\"+env['userLang']+"\\config.json",
+            'logo':logo,
 
         }
         
@@ -49,5 +64,25 @@ props={
 
 }
 
-root_monted(props)
+DATABASE=props['db']['dir']+props['db']['name']
+
+result=connexion(DATABASE,'login' ,'password') 
+print(result)
+dbexist=True
+try :
+    conn=sqlite3.connect('DATABASE')
+    print('connexion reussi')
+except :
+    print('connexion echouer')
+    dbexist=False  
+
+if dbexist:
+    root_monted(props)
+else:
+    auth_valide=root_auth(props)
+    print(auth_valide)
+    if (props['auth']['valide']==1):
+        root_monted(props)
+        print('monter')
+
 root.mainloop()

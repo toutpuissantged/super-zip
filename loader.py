@@ -7,6 +7,7 @@ from random import randrange
 from pygame import mixer
 import json
 import time
+import sqlite3
 
 
 from core.music import music
@@ -18,3 +19,6 @@ from core.extract.ui import *
 from core.lang.ui import *
 from core.music.music import * 
 from core.home.main import *
+from core.home.login import *
+from core.db.crud import*
+from core.db.optimize import *
