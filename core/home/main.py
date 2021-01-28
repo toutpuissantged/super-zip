@@ -11,7 +11,20 @@ def root_monted(props):
     lang=props['lang']
     langPop=props['langPop']
 
-    print('terminer')
+    my_menu=Menu(root)
+    root.config(menu=my_menu)
+    file_menu=Menu(my_menu)
+    my_menu.add_cascade(label="File",menu=file_menu)
+    file_menu.add_command(label="Open New",command=root.quit)
+    file_menu.add_command(label="Open Recent",command=root.quit)
+    file_menu.add_command(label="Exit",command=root.quit)   
+
+    file_menu2=Menu(my_menu)
+    my_menu.add_cascade(label="Option",menu=file_menu2)
+
+    file_menu3=Menu(my_menu)
+    my_menu.add_cascade(label="A propos",menu=file_menu3)
+
     cnv = Canvas(root, width=SIDEX, height=SIDEY, bg='ivory')
     cnv.grid(row=2,column=1,padx=1,pady=1)
     #logo = PhotoImage(file="main.jpg")
@@ -25,3 +38,4 @@ def root_monted(props):
     btn.grid(row=1,column=0,padx=10,pady=10)
     Button(root,text="langue",fg="white",bg="crimson",width=15,padx=10,pady=10, command=langPop).grid(row=2,column=0,padx=10,pady=10)
     Button(root,text="login",fg="white",bg="darkblue",width=15,padx=10,pady=10, command=langPop).grid(row=3,column=0,padx=10,pady=10)
+#correctement commiter

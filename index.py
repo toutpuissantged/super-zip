@@ -70,7 +70,7 @@ result=connexion(DATABASE,'login' ,'password')
 print(result)
 dbexist=True
 try :
-    conn=sqlite3.connect('DATABASE')
+    conn=sqlite3.connect(DATABASE)
     print('connexion reussi')
 except :
     print('connexion echouer')
@@ -80,9 +80,5 @@ if dbexist:
     root_monted(props)
 else:
     auth_valide=root_auth(props)
-    print(auth_valide)
-    if (props['auth']['valide']==1):
-        root_monted(props)
-        print('monter')
-
+    
 root.mainloop()
