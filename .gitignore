@@ -9,3 +9,4 @@ core/music/__pycache__
 core/root/__pycache__
 dist
 build
+venv

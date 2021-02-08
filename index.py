@@ -68,6 +68,7 @@ DATABASE=props['db']['dir']+props['db']['name']
 
 result=connexion(DATABASE,'login' ,'password') 
 print(result)
+print('ok ca marche')
 dbexist=True
 try :
     conn=sqlite3.connect(DATABASE)
