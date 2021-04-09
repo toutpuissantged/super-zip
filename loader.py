@@ -10,15 +10,15 @@ import time
 import sqlite3
 
 
-from core.music import music
-from core.config.default import *
-from core.lang.init import *
-from core.extract.base import *
-from core.extract.msg import *
-from core.extract.ui import *
-from core.lang.ui import *
-from core.music.music import * 
-from core.home.main import *
-from core.home.login import *
-from core.db.crud import*
-from core.db.optimize import *
+from music import music
+from config.default import *
+from lang.init import *
+from extract.base import *
+from extract.msg import *
+from extract.ui import *
+from lang.ui import *
+from music.music import * 
+from home.main import *
+from home.login import *
+from db.crud import*
+from db.optimize import *

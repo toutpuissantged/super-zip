@@ -59,14 +59,15 @@ props={
             'logo':logo,
 
         }
-        
+
     }
 
 }
 
+
 DATABASE=props['db']['dir']+props['db']['name']
 
-result=connexion(DATABASE,'login' ,'password') 
+result=connexion(DATABASE,'login' ,'password')
 print(result)
 print('ok ca marche')
 dbexist=True
@@ -75,11 +76,11 @@ try :
     print('connexion reussi')
 except :
     print('connexion echouer')
-    dbexist=False  
+    dbexist=False
 
 if dbexist:
     root_monted(props)
 else:
     auth_valide=root_auth(props)
-    
+
 root.mainloop()

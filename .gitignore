@@ -1,12 +1,8 @@
-asset/
-zip.code-workspace
-.vscode/
-__pycache__
-core/config/__pycache__
-core/extract/__pycache__
-core/lang/__pycache__
-core/music/__pycache__
-core/root/__pycache__
+asset/*
+.vscode/*
+__pycache__/*
+*/__pycache__
+
 dist
 build
 venv
